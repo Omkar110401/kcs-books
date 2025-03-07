@@ -325,8 +325,7 @@ function openBook(url, filename) {
                 </head>
                 <body>
                     <p>Preview is not available for mobile devices.</p>
-                    <p>Download should start automatically. If not, click the download button below.</p>
-                    <a href="${url}" download="${filename}" style="display: inline-block; padding: 10px 15px; background: blue; color: white; text-decoration: none; border-radius: 5px; margin-top: 10px;">Download Now</a>
+                    <p>Download should start automatically. If not, click the download button above.</p>
                 </body>
                 </html>
             `;
