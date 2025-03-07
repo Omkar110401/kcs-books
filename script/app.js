@@ -315,8 +315,21 @@ function openBook(url, filename) {
     bookFrame.src = "about:blank"; // Reset first
     setTimeout(() => {
         if (window.innerWidth < 768) {
-            bookFrame.src = `https://docs.google.com/gview?embedded=true&url=${encodeURIComponent(url)}`;
-            bookFrame.textContent= "Preview is not Available for Mobile Devices. Download should start autmatically, if not please click on the download button.";
+            bookFrame.srcdoc = `
+                <html>
+                <head>
+                    <style>
+                        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+                        p { font-size: 16px; color: red; }
+                    </style>
+                </head>
+                <body>
+                    <p>Preview is not available for mobile devices.</p>
+                    <p>Download should start automatically. If not, click the download button below.</p>
+                    <a href="${url}" download="${filename}" style="display: inline-block; padding: 10px 15px; background: blue; color: white; text-decoration: none; border-radius: 5px; margin-top: 10px;">Download Now</a>
+                </body>
+                </html>
+            `;
             downloadBook(url, filename)
         } else {
             bookFrame.src = url;
