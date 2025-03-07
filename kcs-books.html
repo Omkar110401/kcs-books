@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="css/kcs-books.css">
+    <script src="script/app.js" defer></script>
+    <title>KCS Books</title>
+</head>
+
+<body>
+    <div class="heading">
+        <h3>Original unedited books of His Divine Grace A.C Bhaktivedanta Swami Srila Prabhupada</h3>
+    </div>
+
+    <div class="image">
+        <img src="./assets/prabhupada.png" alt="Prabhupada" id="main-img">
+        <p id="warning">(Please click on the links to expand the book list, then click on a book to download or read it.)</p>
+    </div>
+
+    <div class="container">
+        <!-- Left: Book List -->
+        <div class="book-list">
+            <h3>Available Books</h3>
+            <div id="book-list" class="book-grid"></div>
+        </div>
+
+        <!-- Right: Book Viewer -->
+        <div class="book-viewer" style="display: none;">
+            <div class="button-container">
+                <button id="closeBtn" style="display:none;">
+                    <i class="fas fa-times"></i> Close
+                </button>
+                <button id="downloadBtn" style="display:none;">
+                    <i class="fas fa-download"></i> Download
+                </button>
+            </div>
+            <!-- <iframe id="bookFrame"></iframe> -->
+            <iframe id="bookFrame" style="width: 100%; height: 90vh; border: none; display: none;"></iframe>
+
+        </div>
+    </div>
+</body>
+
+</html>
