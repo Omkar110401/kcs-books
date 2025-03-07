@@ -311,66 +311,35 @@ function toggleSubBooks(index) {
 // 📌 Open book in iframe
 function openBook(url, filename) {
     let bookFrame = document.getElementById("bookFrame");
-    let bookViewerContainer = document.getElementsByClassName("book-viewer")[0];
-    let downloadBtn = document.getElementById("downloadBtn");
 
+    bookFrame.src = "about:blank"; // Reset first
+    setTimeout(() => {
+        if (window.innerWidth < 768) {
+            bookFrame.src = `https://docs.google.com/gview?embedded=true&url=${encodeURIComponent(url)}`;
+        } else {
+            bookFrame.src = url;
+        }
+    }, 100);
+
+    const bookViewerContainer = document.getElementsByClassName('book-viewer')[0];
+    document.getElementById('closeBtn').style.display = "inline-block";
+    document.getElementById("downloadBtn").style.display = "inline-block";
     bookViewerContainer.style.display = "flex";
     bookViewerContainer.style.flexDirection = "column";
     bookViewerContainer.style.alignItems = "center";
     setTimeout(() => {
         bookViewerContainer.scrollIntoView({ behavior: "smooth" });
 
-    }, 1000);
-
-    document.getElementById("closeBtn").style.display = "inline-block";
-    downloadBtn.style.display = "inline-block";
-    downloadBtn.onclick = () => downloadBook(url, filename);
-
-    const isMobile = window.innerWidth < 768;
-
-    if (isMobile) {
-        bookFrame.style.display = "none"; // Hide iframe on mobile
-        loadPDFWithPDFJS(url);
-    } else {
-        bookFrame.src = url;
-        bookFrame.style.display = "block";
-    }
+    }, 500);
+    document.getElementById("downloadBtn").onclick = () => downloadBook(url, filename);
 }
-
-function loadPDFWithPDFJS(pdfUrl) {
-    // Remove existing canvas if present
-    let oldCanvas = document.getElementById("pdfCanvas");
-    if (oldCanvas) oldCanvas.remove();
-
-    const pdfContainer = document.createElement("canvas");
-    pdfContainer.id = "pdfCanvas";
-    document.querySelector(".book-viewer").appendChild(pdfContainer);
-
-    pdfjsLib.getDocument(pdfUrl).promise.then(pdf => {
-        pdf.getPage(1).then(page => {
-            const scale = 1.5;
-            const viewport = page.getViewport({ scale: scale });
-            const canvas = document.getElementById("pdfCanvas");
-            const context = canvas.getContext("2d");
-
-            canvas.height = viewport.height;
-            canvas.width = viewport.width;
-
-            const renderContext = {
-                canvasContext: context,
-                viewport: viewport
-            };
-            page.render(renderContext);
-        });
-    });
-}
-
 
 // 📌 Close book
 document.getElementById("closeBtn").addEventListener("click", function () {
     document.getElementById("bookFrame").src = "";
     document.getElementById("downloadBtn").style.display = "none";
     document.getElementById("closeBtn").style.display = "none";
+    document.getElementsByClassName('book-viewer')[0].style.display = "none";
 });
 
 // 📌 Download book
