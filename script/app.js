@@ -319,7 +319,7 @@ function openBook(url, filename) {
                 <html>
                 <head>
                     <style>
-                        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+                        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; display: flex; flex-direction: column; height: 100%;align-items: center;justify-content: center;}
                         p { font-size: 16px; color: red; }
                     </style>
                 </head>
