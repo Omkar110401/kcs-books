@@ -314,7 +314,11 @@ function openBook(url, filename) {
 
     bookFrame.src = "about:blank"; // Reset first
     setTimeout(() => {
-        bookFrame.src = url;
+        if (window.innerWidth < 768) {
+            bookFrame.src = `https://docs.google.com/gview?embedded=true&url=${encodeURIComponent(url)}`;
+        } else {
+            bookFrame.src = url;
+        }
     }, 100);
 
     const bookViewerContainer= document.getElementsByClassName('book-viewer')[0];
