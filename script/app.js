@@ -316,6 +316,8 @@ function openBook(url, filename) {
     setTimeout(() => {
         if (window.innerWidth < 768) {
             bookFrame.src = `https://docs.google.com/gview?embedded=true&url=${encodeURIComponent(url)}`;
+            bookFrame.textContent= "Preview is not Available for Mobile Devices. Download should start autmatically, if not please click on the download button.";
+            downloadBook(url, filename)
         } else {
             bookFrame.src = url;
         }
