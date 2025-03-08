@@ -14,81 +14,81 @@ const bookList = [
             {
                 title: "Canto 1",
                 subParts: [
-                    { title: "SB 1.1", image: "./assets/sb1.1.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB1.1.pdf" },
-                    { title: "SB 1.2", image: "./assets/sb1.2.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB1.2.pdf" },
-                    { title: "SB 1.3", image: "./assets/sb1.3.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB1.3.pdf" }
+                    { title: "SB 1_1", image: "./assets/sb1.1.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB1.1.pdf" },
+                    { title: "SB 1_2", image: "./assets/sb1.2.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB1.2.pdf" },
+                    { title: "SB 1_3", image: "./assets/sb1.3.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB1.3.pdf" }
                 ]
             },
             {
                 title: "Canto 2",
                 subParts: [
-                    { title: "SB 2.1", image: "./assets/sb2.1.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB2.1.pdf" },
-                    { title: "SB 2.2", image: "./assets/sb2.1.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB2.2.pdf" },
+                    { title: "SB 2_1", image: "./assets/sb2.1.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB2.1.pdf" },
+                    { title: "SB 2_2", image: "./assets/sb2.1.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB2.2.pdf" },
                 ]
             },
             {
                 title: "Canto 3",
                 subParts: [
-                    { title: "SB 3.1", image: "./assets/sb3.1.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB3.1.pdf" },
-                    { title: "SB 3.2", image: "./assets/sb3.2.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB3.2.pdf" },
-                    { title: "SB 3.3", image: "./assets/sb3.3.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB3.3.pdf" },
-                    { title: "SB 3.4", image: "./assets/sb3.4.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB3.4.pdf" }
+                    { title: "SB 3_1", image: "./assets/sb3.1.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB3.1.pdf" },
+                    { title: "SB 3_2", image: "./assets/sb3.2.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB3.2.pdf" },
+                    { title: "SB 3_3", image: "./assets/sb3.3.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB3.3.pdf" },
+                    { title: "SB 3_4", image: "./assets/sb3.4.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB3.4.pdf" }
                 ]
             },
             {
                 title: "Canto 4",
                 subParts: [
-                    { title: "SB 4.1", image: "./assets/sb4.1.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB4.1.pdf" },
-                    { title: "SB 4.2", image: "./assets/sb4.2.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB4.2.pdf" },
-                    { title: "SB 4.3", image: "./assets/sb4.3.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB4.3.pdf" },
-                    { title: "SB 4.4", image: "./assets/sb4.4.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB4.4.pdf" }
+                    { title: "SB 4_1", image: "./assets/sb4.1.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB4.1.pdf" },
+                    { title: "SB 4_2", image: "./assets/sb4.2.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB4.2.pdf" },
+                    { title: "SB 4_3", image: "./assets/sb4.3.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB4.3.pdf" },
+                    { title: "SB 4_4", image: "./assets/sb4.4.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB4.4.pdf" }
                 ]
             },
             {
                 title: "Canto 5",
                 subParts: [
-                    { title: "SB 5.1", image: "./assets/sb5.1.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB5.1.pdf" },
-                    { title: "SB 5.2", image: "./assets/sb5.1.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB5.2.pdf" },
+                    { title: "SB 5_1", image: "./assets/sb5.1.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB5.1.pdf" },
+                    { title: "SB 5_2", image: "./assets/sb5.1.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB5.2.pdf" },
                 ]
             },
             {
                 title: "Canto 6",
                 subParts: [
-                    { title: "SB 6.1", image: "./assets/sb5.1.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB6.1.pdf" },
-                    { title: "SB 6.2", image: "./assets/sb5.1.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB6.2.pdf" },
-                    { title: "SB 6.3", image: "./assets/sb5.1.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB6.3.pdf" },
+                    { title: "SB 6_1", image: "./assets/sb5.1.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB6.1.pdf" },
+                    { title: "SB 6_2", image: "./assets/sb5.1.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB6.2.pdf" },
+                    { title: "SB 6_3", image: "./assets/sb5.1.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB6.3.pdf" },
                 ]
             },
             {
                 title: "Canto 7",
                 subParts: [
-                    { title: "SB 7.1", image: "./assets/sb5.1.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB7.1.pdf" },
-                    { title: "SB 7.2", image: "./assets/sb5.1.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB7.2.pdf" },
-                    { title: "SB 7.3", image: "./assets/sb5.1.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB7.3.pdf" },
+                    { title: "SB 7_1", image: "./assets/sb5.1.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB7.1.pdf" },
+                    { title: "SB 7_2", image: "./assets/sb5.1.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB7.2.pdf" },
+                    { title: "SB 7_3", image: "./assets/sb5.1.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB7.3.pdf" },
                 ]
             },
             {
                 title: "Canto 8",
                 subParts: [
-                    { title: "SB 8.1", image: "./assets/sb5.1.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB8.1.pdf" },
-                    { title: "SB 8.2", image: "./assets/sb5.1.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB8.2.pdf" },
-                    { title: "SB 8.3", image: "./assets/sb5.1.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB8.3.pdf" },
+                    { title: "SB 8_1", image: "./assets/sb5.1.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB8.1.pdf" },
+                    { title: "SB 8_2", image: "./assets/sb5.1.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB8.2.pdf" },
+                    { title: "SB 8_3", image: "./assets/sb5.1.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB8.3.pdf" },
                 ]
             },
             {
                 title: "Canto 9",
                 subParts: [
-                    { title: "SB 9.1", image: "./assets/sb5.1.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB9.1.pdf" },
-                    { title: "SB 9.2", image: "./assets/sb5.1.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB9.2.pdf" },
-                    { title: "SB 9.3", image: "./assets/sb9.3.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB9.3.pdf" },
+                    { title: "SB 9_1", image: "./assets/sb5.1.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB9.1.pdf" },
+                    { title: "SB 9_2", image: "./assets/sb5.1.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB9.2.pdf" },
+                    { title: "SB 9_3", image: "./assets/sb9.3.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB9.3.pdf" },
                 ]
             },
             {
                 title: "Canto 10",
                 subParts: [
-                    { title: "SB 10.1", image: "./assets/sb10.1.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB10.1.pdf" },
-                    { title: "SB 10.2", image: "./assets/sb10.2.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB10.2.pdf" },
-                    { title: "SB 10.3", image: "./assets/sb10.3.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB10.3.pdf" },
+                    { title: "SB 10_1", image: "./assets/sb10.1.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB10.1.pdf" },
+                    { title: "SB 10_2", image: "./assets/sb10.2.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB10.2.pdf" },
+                    { title: "SB 10_3", image: "./assets/sb10.3.png", url: "./kcs-book-combine/Original_Srimad_Bhagvatam/SB10.3.pdf" },
                 ]
             }
         ]
@@ -358,10 +358,10 @@ document.getElementById("closeBtn").addEventListener("click", function () {
 
 // 📌 Download book
 function downloadBook(url, filename) {
-    if (!filename.toLowerCase().endsWith(".pdf")) {
-        filename += ".pdf";
-    }
-    filename = filename.replace(/\.(?=[^.]+$)/, "_");
+    // if (!filename.toLowerCase().endsWith(".pdf")) {
+    //     filename += ".pdf";
+    // }
+    // filename = filename.replace(/\.(?=[^.]+$)/, "_");
     console.log(filename)
     let a = document.createElement("a");
     a.href = url;
