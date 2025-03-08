@@ -348,21 +348,16 @@ function openBook(url, filename) {
     document.getElementById("downloadBtn").onclick = () => downloadBook(url, filename);
 }
 
-
-
 // 📌 Close book
 document.getElementById("closeBtn").addEventListener("click", function () {
-    console.log("in close")
     document.getElementById("bookFrame").src = "";
     document.getElementById("downloadBtn").style.display = "none";
     document.getElementById("closeBtn").style.display = "none";
     document.getElementsByClassName('book-viewer')[0].style.display = "none";
 });
 
-
 // 📌 Download book
 function downloadBook(url, filename) {
-    console.log(url, filename)
     let a = document.createElement("a");
     a.href = url;
     a.download = filename;
