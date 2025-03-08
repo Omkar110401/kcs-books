@@ -331,7 +331,7 @@ function openBook(url, filename) {
             `;
             downloadBook(url, filename)
         } else {
-            bookFrame.src = url;
+            bookFrame.src = `https://docs.google.com/gview?embedded=true&url=${encodeURIComponent(url)}`;
         }
     }, 100);
 
