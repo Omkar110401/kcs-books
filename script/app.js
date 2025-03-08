@@ -331,7 +331,7 @@ function openBook(url, filename) {
             `;
             downloadBook(url, filename)
         } else {
-            bookFrame.src = `https://docs.google.com/gview?embedded=true&url=${encodeURIComponent(url)}`;
+            bookFrame.src = url;
         }
     }, 100);
 
@@ -363,9 +363,7 @@ document.getElementById("closeBtn").addEventListener("click", function () {
 // 📌 Download book
 function downloadBook(url, filename) {
     console.log(url, filename)
-    console.log(url, filename)
     let a = document.createElement("a");
-    a.target="_blank";
     a.href = url;
     a.download = filename;
     a.click();
