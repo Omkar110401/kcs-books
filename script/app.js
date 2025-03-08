@@ -359,11 +359,10 @@ document.getElementById("closeBtn").addEventListener("click", function () {
 // 📌 Download book
 function downloadBook(url, filename) {
     if (!filename.toLowerCase().endsWith(".pdf")) {
-        filename += ".pdf"; 
+        filename += ".pdf";
     }
-
-    // ✅ Replace dots (`.`) in the filename (except before `.pdf`) with underscores (`_`)
-    filename = filename.replace(/\.([^.]*)$/, "_$1"); // SB 8.1 → SB 8_1
+    filename = filename.replace(/\.(?=[^.]+$)/, "_");
+    console.log(filename)
     let a = document.createElement("a");
     a.href = url;
     a.download = filename;
